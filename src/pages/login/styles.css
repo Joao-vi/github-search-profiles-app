@@ -1,0 +1,92 @@
+#login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+#login-page aside {
+  flex: 7 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 20px;
+  background-color: #2c394b;
+  text-align: start;
+
+  gap: 70px;
+  color: #faf3f3;
+  font-size: 25px;
+}
+
+#login-page aside .circule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 170px;
+
+  border-radius: 100%;
+  background-color: #082032;
+}
+
+#login-page aside .circule img {
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-delay: 0;
+  animation-direction: alternate;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#login-page main {
+  flex: 8;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  color: #082032;
+  gap: 15px;
+}
+
+#login-page main form {
+  display: flex;
+  flex-direction: column;
+
+  width: 250px;
+  gap: 10px;
+}
+
+#login-page main form input {
+  height: 40px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+#login-page main form button {
+  font-family: "Roboto", sans-serif;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #393e46;
+  transition: background 0.2s ease;
+}
+#login-page main form button:hover {
+  background-color: #2f8886;
+}
